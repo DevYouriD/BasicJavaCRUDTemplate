@@ -8,7 +8,7 @@ services:
 #    volumes:
 #      - database:/var/lib/mysql
     ports:
-      - "3307:3306"
+      - "3306:3306" # SET TO AVAILABLE PORT (DEFAULT IS 3306:3306)
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: exampledb
