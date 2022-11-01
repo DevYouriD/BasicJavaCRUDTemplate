@@ -5,8 +5,8 @@ services:
     image: mysql:8.0
     container_name: example-application-db
     restart: unless-stopped
-#    volumes:
-#      - database:/var/lib/mysql
+    volumes:
+      - database:/var/lib/mysql
     ports:
       - "3306:3306" # SET TO AVAILABLE PORT (DEFAULT IS 3306:3306)
     environment:
@@ -15,5 +15,5 @@ services:
       MYSQL_USER: admin
       MYSQL_PASSWORD: password
 
-#volumes:
-#  database:
+volumes:
+  database:
